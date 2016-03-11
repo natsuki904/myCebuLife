@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+h1,h2,p {
+  text-align: center;
+}
+h2 {
+  margin: 60px auto 15px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+.clear {
+  clear: both;
+}
+
+/*複数段でスライドさせる*/
+#wrapper_red {
+  width: 240px; /*サムネイル画像の幅×横に並べる数＋画像間のmargin分*/
+  margin: 0 auto;
+  border: 5px solid #C30;
+  padding: 20px 60px 0;
+}
+#wrapper_red li {
+  float: left;
+  margin: 10px;
+}
+
+/*横1列でスライドさせる*/
+#wrapper_green {
+  width: 430px;
+  height: 100px;
+  margin: 0 auto 100px;
+  border: 5px solid #090;
+  padding: 15px 60px 20px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 100px;
+    margin-right: 10px;
+    }
+}
+
+.hoge {
+    width: 100%;
+    overflow: hidden;
+    position: inherit;
+    height: 100px;
+}
+

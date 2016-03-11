@@ -1,0 +1,22 @@
+/*blockquote {
+    padding: 60px 20px;
+    margin: 0 0 0px;
+     border-left: 5px solid #eeeeee; 
+}
+#Timer {
+        font-weight: 300;
+        font-size: 50px;
+        color: #F5F5F5;
+}
+*/
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { 
+  color: #CCCCCC; background-color: #333333; 
+}
+
+body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot {
+ background: #323434; 
+}
+ 
+ body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a {
+  color: #323434; 
+}

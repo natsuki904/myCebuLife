@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bxSliderとlightBoxを組み合わせて、コンパクトなギャラリーページを作る（サンプルページ）｜初心者のためのWEBデザイン教室</title>
+
+<!-- jQuery library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<!-- Javascript file -->
+<script src="js/lightbox.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+
+<!-- CSS file -->
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- lightboxのための記述 -->
+<script type="text/javascript">
+  $(function() {
+      $('.contSlider a').lightBox();
+  });
+</script>
+            
+<!-- bxSlider（複数段のスライダー）のための記述 -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.contSlider').bxSlider({
+    });
+  });
+</script>
+
+<!-- bxSlider（1列のスライダー）のための記述 -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  // infiniteLoop: false, //最後の画像でストップするよう設定。ループさせる場合はこの行は削除してOK。
+  minSlides: 4, //横に並ぶスライドの数
+  maxSlides:4, //横に並ぶスライドの数
+  slideWidth: 100,//サムネイル画像の幅
+  slideMargin: 10 //サムネイルの画像と画像の余白
+});
+});
+</script>
+</head>
+
+<body>
+
+  <h2>複数段で使う場合</h2>
+
+  <div id="wrapper_red">
+    <div class="contSlider">
+      <ul>
+        <li><a href="photos/01.jpg"><img src="photos/01.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/02.jpg"><img src="photos/02.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/03.jpg"><img src="photos/03.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/04.jpg"><img src="photos/04.jpg" width="100" height="100" /></a></li>
+      </ul>
+      <ul>
+        <li><a href="photos/05.jpg"><img src="photos/05.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/06.jpg"><img src="photos/06.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/07.jpg"><img src="photos/07.jpg" width="100" height="100" /></a></li>
+        <li><a href="photos/08.jpg"><img src="photos/08.png" width="100" height="100" /></a></li>
+      </ul>
+      <ul>
+        <li><a href="photos/09.jpg"><img src="photos/09.jpg" width="100" height="100" /></a></li>
+      </ul>
+    </div>
+  <div class="clear"></div>
+  </div>
+
+
+<h2>横一列</h2>
+
+<div id="wrapper_green">
+  <div class="bx-wrapper">
+    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 100px;">
+      <ul class="bxslider" style="float: left; list-style: none; position: relative; width: 240px;">
+        <li ><a href="photos/01.jpg"><img src="photos/01.jpg" /></a></li>
+        <li><a href="photos/02.jpg"><img src="photos/02.jpg" /></a></li>
+        <li><a href="photos/03.jpg"><img src="photos/03.jpg" /></a></li>
+        <li><a href="photos/04.jpg"><img src="photos/04.jpg" /></a></li>
+        <li><a href="photos/05.jpg"><img src="photos/05.jpg" /></a></li>
+        <li><a href="photos/06.jpg"><img src="photos/06.jpg" /></a></li>
+        <li><a href="photos/07.jpg"><img src="photos/07.jpg" /></a></li>
+        <li><a href="photos/08.jpg"><img src="photos/08.png" /></a></li>
+        <li><a href="photos/09.jpg"><img src="photos/09.jpg"  /></a></li>
+      </ul>
+    </div>
+  </div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+</body>
+</html>
